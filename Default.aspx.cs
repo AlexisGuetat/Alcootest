@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Alcootest.Controller;
+using Alcootest.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,10 +13,12 @@ namespace Alcootest
     {
         private static string AppName = "Acooltest",
                               Message = "Bienvenue sur l'alcootest Online.";
+
+    
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            title.Text = AppName;
-            message.Text = Message;
+
         }
 
 

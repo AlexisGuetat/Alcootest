@@ -12,7 +12,6 @@ namespace Alcootest.Models
         {
 
         }
-
         public DbSet<Category> Categories { get; set; }
     }
 }

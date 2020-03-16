@@ -9,6 +9,7 @@ namespace Alcootest.Models
     public class Category
     {
         [ScaffoldColumn(false)]
+        [Key]
         public int ID { get; set; }
 
         [Required,StringLength(100),Display(Name="Nom")]

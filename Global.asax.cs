@@ -21,6 +21,22 @@ namespace Alcootest
 
             // Initialize the product database.
             Database.SetInitializer(new CategoryDatabaseInitalizer());
+
+            RegisterCustomRoutes(RouteTable.Routes);
+        }
+
+        void RegisterCustomRoutes(RouteCollection routes)
+        {
+            routes.MapPageRoute(
+                "Test",
+                "Test",
+                "~/Test.aspx"
+            );
+            routes.MapPageRoute(
+                "Result",
+                "Result",
+                "~/Result.aspx"
+            );
         }
     }
 }
